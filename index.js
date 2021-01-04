@@ -5,9 +5,10 @@ function addCar(){
   var type=sessionStorage.getItem("type");
   if(num>curr){
       //Add Car
-      var left=num-curr;
+      
       sessionStorage.removeItem("curr");
       curr++;
+     var left=num-curr;
       sessionStorage.setItem("curr",curr);
       alert("You have parked successfuly. You have "+curr+" parked car(s) in your "+type+". You have "+left+" spots left.");
       
