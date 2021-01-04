@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Parking Help</title>
+  
+<meta charset="UTF-8">  
+<link rel="shortcut icon" href="favicon.ico?" type="image/x-icon">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" type="text/css"  href="index.css" >
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+      </head>
+    <body>
+    <div id="header" style="overflow: hidden">
+    <a href= "index.html"><img src = "logo.png"  id = "logo" /></a>
+    <div class="navBar">
+    <a href="index.html">Home</a>
+    <a href= "index.html#newUser">Add User</a>
+    <a href="index.html#status">Status</a>
+    <a href='addCar.html'>Add Car</a>
+    <a href='contact.html'>Contact Us</a>
+    </div>
+</div>  
+        
+        
+        <br>    
+<div class="boxerImage">
+  <!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+    <center>
+    <div class="w3-display-center w3-text-white" style="padding:48px">
+        
+    <span class="w3-jumbo">Stop wasting valuable time</span><br>
+    <span class="w3-xxlarge">Use our program to help you track your garage or driveway.</span><br>
+    <p><a href="#newUser" id='abtButton' class="w3-button w3-white w3-padding-large w3-large w3-margin-top" style="text-decoration:none;">Get Started Today!</a></p>
+   <div id='newUser'></div>
+    </div></center>
+
+
+</header>
+
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<center><h2>Fill In The Form Below:</h2>
+<hr>
+
+<form id="nameForm" onsubmit='begin()'>
+    <div id="box">
+    <h4>Name:   
+    <input type='text' placeholder='Sarah Smith' name='fname' required></h4> 
+     <h4>Email:
+    <input type='text' placeholder='sarahsmith@gmail.com' name='email' id='email' required></h4> 
+    <br>
+    <h4>Parking Storage Type:
+    <select name="type" id='type'>
+        <option value="Garage">Garage</option>
+        <option value="Driveway">Driveway</option>
+    </select></h4>
+    <br>
+    <h4>Number of Cars that Fit Inside:
+    <input type='number' placeholder='2'  id='max' name='numCars' min="1" max="100" required></h4>
+    <button type="submit" id="enter" name="submitButton">Submit
+    </button>
+    </div>
+</form>
+
+<br>
+<br>
+<div class="banner">
+    <div class='styleText'>
+    <h1>Helping thousands of customers daily</h1>
+    <h2>Join the movement to stop wasting valuable time</h2>
+    <h3>Fill Out the Form Today!</h3></div>
+</div>
+</center>
+<br>
+<br>
+<center><h2>Check Your Status:</h2>
+<hr>
+<div id='status'></div>
+<form id="statusForm" onsubmit='status()'>
+    <div id="box">
+    <h4>Email:<input type='text' placeholder='sarah@gmail.com' name='email' required></h4> 
+    <button type="submit" id="enter" style="background-color: black; width:25%" name="chkButton">Check
+    </button>
+    </div>
+</form>
+
+<br>
+<br>
+<div>
+    <p id='statusCheck' ></p>
+</div>
+</center>
+
+
+<script src='index.js'></script>
+    </body>
+</html>
